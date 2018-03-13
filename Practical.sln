@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheSameElementFromTwoLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlContractSerialization", "XmlContractSerialization\XmlContractSerialization.csproj", "{6253B653-6F87-449A-8CB4-DD8C528AAA71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCustomExpander", "WPFCustomExpander\WPFCustomExpander.csproj", "{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
