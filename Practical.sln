@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlContractSerialization", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCustomExpander", "WPFCustomExpander\WPFCustomExpander.csproj", "{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWithMapReduce", "AsyncWithMapReduce\AsyncWithMapReduce.csproj", "{2CC1F27C-7032-4C44-9181-354A0D44ECF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
