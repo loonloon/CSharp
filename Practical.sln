@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCustomExpander", "WPFCus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWithMapReduce", "AsyncWithMapReduce\AsyncWithMapReduce.csproj", "{2CC1F27C-7032-4C44-9181-354A0D44ECF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheMaxProfitOfStockPrice", "FindTheMaxProfitOfStockPrice\FindTheMaxProfitOfStockPrice.csproj", "{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
