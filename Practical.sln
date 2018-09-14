@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2016
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheSameElementFromTwoList", "FindTheSameElementFromTwoList\FindTheSameElementFromTwoList.csproj", "{9F4ACDCB-505B-406C-8C5D-601A9E971FAD}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheMaxProfitOfStockPrice", "FindTheMaxProfitOfStockPrice\FindTheMaxProfitOfStockPrice.csproj", "{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFHostMvc", "WPFHostMvc\WPFHostMvc\WPFHostMvc.csproj", "{BB5B1346-5175-44E1-A2AF-06979249C121}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToHtmlByXslt", "XmlToHtmlByXslt\XmlToHtmlByXslt.csproj", "{7BD38900-3FDE-4389-B05B-945209EDC5C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{BB5B1346-5175-44E1-A2AF-06979249C121}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB5B1346-5175-44E1-A2AF-06979249C121}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB5B1346-5175-44E1-A2AF-06979249C121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
