@@ -6,9 +6,7 @@
 * http://venus.cs.qc.cuny.edu/~mfried/cs313/graphs.html
 * https://msdn.microsoft.com/en-us/library/ms379574(v=vs.80).aspx
 
-#### Database ####
-Optimistic vs Pessimistic
-
+#### Optimistic vs Pessimistic ####
 * Optimistic concurrency 
 Improves performance because no locking of records is required.
 
