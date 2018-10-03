@@ -11,9 +11,9 @@
 
 #### What concurrent collections are there? ####
 1. Concurrent Dictionary
-2. Concurrent Queue
-3. Concurrent Stack
-4. Concurrent Bag
+2. Concurrent Queue (Producer Consumer Collection)
+3. Concurrent Stack (Producer Consumer Collection)
+4. Concurrent Bag (Producer Consumer Collection)
 
 #### Concurrent Dictionary ####
 - Do not protect you from race conditions between method calls.
