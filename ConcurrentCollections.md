@@ -82,3 +82,7 @@ Wont't throw exceptions if they fail  | Will always succeed
 `}`
 
 #### Using `GetOrAdd()` for looking up values ####
+
+#### Using `BlockingCollection` ####
+- If there are no items in the collection, the `Take()` function will simply wait and blocking the thread until an item does become available to take.
+- ___ConcurrentBag will perform badly if producers and comsumers are on different threads___.
