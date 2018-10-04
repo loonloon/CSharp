@@ -103,5 +103,5 @@ Wont't throw exceptions if they fail  | Will always succeed
   * In `ConcurrentDictionary`, `ToArray()`, `Values`, `Keys` methods will take snapshot (slow) of the collection.
 * ___Use concurrent collection when multiple writers situation___. 
 * How about ___multiple readers___ using standard collections? It often work but risk, read values might changed under hood. Solutions?
-  * Use concurrent collection/
+  * Use concurrent collection.
   * Use immutable collection.
