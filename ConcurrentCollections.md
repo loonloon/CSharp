@@ -29,27 +29,25 @@ Wont't throw exceptions if they fail  | Will always succeed
 `int psStock = stock["apple"];`
 
 #### Using `TryGetValue()`: ####
-`int psStock;` <br />
-`bool success = stock.TryGetValue("apple", out psStock);`
+```
+int psStock;
+bool success = stock.TryGetValue("apple", out psStock);
+```
 
 #### Using `TryUpdate()` #### 
 - to avoid overwriting the actions of another thread, but require to pass in old value.
 - Below example ensure the data will not be corrupted, but the value still invali in mutltithreading environment.
+```
+int temp = stock["apple"];
+bool success = stock.TryUpdate("apple", temp + 1, temp);
 
-`int temp = stock["apple"];`
-
-`bool success = stock.TryUpdate("apple", temp + 1, temp);`
-
-
-`if(!success) {`
-
+if(!success) 
+{
   //will not work, because another thread might change the value after set value to temp.
-
-  `temp = stock["apple"];`
-
-`
+  temp = stock["apple"];
 }
-`
+```
+
 #### Using `AddOrUpdate()` for modifying values #### 
 - It repeatedly evaluates the delegate and uses `TryUpdate()` until `TryUpdate()` succeeds.
 - So the __delegate may execute more than once__.
@@ -59,27 +57,29 @@ Wont't throw exceptions if they fail  | Will always succeed
 - Do each operation in 1 method call.
 - Example 1, OK because it only access the dictionary once.
 
-`int psStock = stock.AddOrUpdate("apple", 1 (key, oldValue) => oldValue + 1);`
-
-`Console.WriteLine("New value is " + psStock);`
+```
+int psStock = stock.AddOrUpdate("apple", 1 (key, oldValue) => oldValue + 1);
+Console.WriteLine("New value is " + psStock);
+```
 
 - Example 2, NG because it access the dictionary twice. Other thread may modified the value before the console display the value.
 
-`int psStock = stock.AddOrUpdate("apple", 1 (key, oldValue) => oldValue + 1);`
-
-`Console.WriteLine("New value is " + stock["apple"]);`
+```
+int psStock = stock.AddOrUpdate("apple", 1 (key, oldValue) => oldValue + 1);
+Console.WriteLine("New value is " + stock["apple"]);
+```
 
 - Example 3, OK because it does not matter if another thread sneak before `if (newStockLevel < 0)`, the logic still working fine.
 
-`var newStockLevel = _stock.AddOrUpdate(item, -1, (key, oldValue) => oldValue - 1);`
+```
+var newStockLevel = _stock.AddOrUpdate(item, -1, (key, oldValue) => oldValue - 1);
 
-`if (newStockLevel < 0) {`
-
-`_stock.AddOrUpdate(item, 1, (key, oldValue) => oldValue + 1);`
-
-`return false;`
-
-`}`
+if (newStockLevel < 0) 
+{
+  _stock.AddOrUpdate(item, 1, (key, oldValue) => oldValue + 1);
+  return false;
+}
+```
 
 #### Using `GetOrAdd()` for looking up values ####
 
