@@ -86,3 +86,22 @@ Wont't throw exceptions if they fail  | Will always succeed
 #### Using `BlockingCollection` ####
 - If there are no items in the collection, the `Take()` function will simply wait and blocking the thread until an item does become available to take.
 - ___ConcurrentBag will perform badly if producers and comsumers are on different threads___.
+
+#### Performance ####
+-Don't use concurrent collections unless you really need the thread safety.
+- `ConcurrentDictionary` and `ConcurrentBag` use ___fine-grained locking___. Its internally has different buckets (Hash table), and separate lock for each bucket. Different thread can access different bucket at the same time. 
+- In `ConcurrentDictionary` methods, `IsEmpty()`, `Count`, `Clear()`, `ToArray()`, `CopyTo()`, `Values`, `Keys` are lock extensive.
+- In `ConcurrentBag` methods, `IsEmpty()`, `Count`, `Clear()`, `ToArray()`, `CopyTo()`, `GetEnumerator() (foreach loop)` are lock extensive.
+
+#### Good Practice ####
+* Avoid querying the state of concurrent collections too often.
+  * Answer can be out of date as soon as you have it.
+  * Hurts performance.
+* If enumerating `Dictionary` while modifying, it will thows exception.
+* You can enumerate `ConcurrentDictionary` while it's being modified, ___but the result aren't guaranteed___.
+  * For `ConcurrentStack`, `ConcurrentBag` and `ConcurrentQueue`, snapshot of collection taken and subsequent changes ignored.
+  * In `ConcurrentDictionary`, `ToArray()`, `Values`, `Keys` methods will take snapshot (slow) of the collection.
+* ___Use concurrent collection when multiple writers situation___. 
+* How about ___multiple readers___ using standard collections? It often work but risk, read values might changed under hood. Solutions?
+  * Use concurrent collection/
+  * Use immutable collection.
