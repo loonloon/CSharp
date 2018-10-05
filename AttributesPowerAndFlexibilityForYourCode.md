@@ -61,3 +61,33 @@ private void OutputDebugInfo()
   Console.WriteLine("Debug Mode"); 
 }
 ```
+#### Create and applying customer attribute ####
+```
+[AttributeUsage(AttributeTargets.Property)]
+class DisplayAttribute : Attribute
+{
+    public string Label { get; }
+    public ConsoleColor Color { get; }
+
+    public DisplayAttribute(string label, ConsoleColor color = ConsoleColor.White)
+    {
+        Label = label ?? throw new ArgumentNullException(nameof(label));
+        Color = color;
+    }
+}
+
+public class Contact
+{
+    [Display("First Name: ", System.ConsoleColor.Cyan)]
+    public string FirstName { get; set; }
+
+    public int AgeInYears { get; set; }
+}
+
+private void WriteFirstName()
+{
+    var firstNameProperty = typeof(Contact).GetProperty(nameof(Contact.FirstName));
+    var firstNameDisplayAttribute = (DisplayAttribute)Attribute.GetCustomAttribute(firstNameProperty, typeof(DisplayAttribute));
+    var foregroundColor = firstNameDisplayAttribute.Color;
+}
+````
