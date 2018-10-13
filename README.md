@@ -12,3 +12,7 @@ Improves performance because no locking of records is required.
 
 * Pessimistic concurrency 
 Involves locking rows at the data source to prevent other users from modifying data in a way that affects the current user.
+
+#### Fiddle ####
+* https://xsltfiddle.liberty-development.net/
+* https://jsfiddle.net/
