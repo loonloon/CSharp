@@ -16,3 +16,6 @@ Involves locking rows at the data source to prevent other users from modifying d
 #### Fiddle ####
 * https://xsltfiddle.liberty-development.net/
 * https://jsfiddle.net/
+
+#### Convert CSS to inline style ####
+https://www.myintervals.com/emogrifier.php
