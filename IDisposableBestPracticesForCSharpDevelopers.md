@@ -141,6 +141,10 @@ public  interface IBookFeedRepository: IDisposable
 
 #### Best Practice #8 If you implement IDisposable, don’t implement it explicitly ####
 
+Shawn Farkas, a design engineer on the CLR security team writes in MSDN magazine that,
+
+Although the using block will work with classes that do have an explicit IDisposable implementation, I recommend that classes never implement the interface this way. If you explicitly implement IDisposable, ***developers who are exploring your object model using IntelliSense® in Visual Studio® will not notice that the object has a Dispose method.***
+
 ```
 public class DifficultToDiscover: IDisposable
 {
