@@ -1,4 +1,4 @@
-IDisposable Best Practices for C# Developers by Elton Stoneman
+#### IDisposable Best Practices for C# Developers by Elton Stoneman ####
 
 __IDisposable__ provides a mechanism for releasing unmanaged resouces.
 
