@@ -120,6 +120,10 @@ protected override void Dispose(bool disposing)
   base.Dispose(disposing);
 }
 ```
+#### Best Practice #6 Enable Code Analysis with CA2000 enabled –but don’t rely on it ####
+
+![img2](https://user-images.githubusercontent.com/5309726/47964111-c5d71900-e06f-11e8-8dac-e593c183cd95.png)
+
 #### Best Practice #7 If you implement an interface and use IDisposable fields, extend your interface from IDisposable ####
 
 ```
