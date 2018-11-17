@@ -1,5 +1,8 @@
-#### Application Domains ####
+#### C# Application Domains ####
 * https://liviutrifoi.wordpress.com/tag/c-appdomain-tutorial/
+
+#### C# TheadStatic & ThreadLocal ####
+* http://putridparrot.com/blog/using-threadstatic-and-threadlocal/
 
 #### Graphs ####
 * http://www.vcskicks.com/representing-graphs.php
