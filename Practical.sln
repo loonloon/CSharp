@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToHtmlByXslt", "XmlToHtm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalKingdom", "AnimalKingdom\AnimalKingdom.csproj", "{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopUnrolling", "LoopUnrolling\LoopUnrolling.csproj", "{93E01DFF-8227-4D58-B600-B32808DA9B66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
