@@ -25,28 +25,6 @@ static void OptimizedCode()
 }
 ```
 
-#### For Loop ####
-
-```
-static void NotOptimizedCode()
-{
-    for(int i = 0; i < array.Length; i++)
-    {
-        Console.WriteLine(i);
-    }
-}
-
-static void OptimizedCode()
-{
-    int length = array.Length;
-    
-    for(int i = 0; i < length; i++)
-    {
-        Console.WriteLine(i);
-    }
-}
-```
-
 #### For Loop Decrement optimization ####
 
 ```
