@@ -1,7 +1,16 @@
-#### Application Domains ####
+#### C# Application Domains ####
 * https://liviutrifoi.wordpress.com/tag/c-appdomain-tutorial/
 
-#### Graphs ####
+#### C# TheadStatic & ThreadLocal ####
+* http://putridparrot.com/blog/using-threadstatic-and-threadlocal/
+
+#### C# TheadStatic & ThreadLocal ####
+https://msdn.microsoft.com/en-us/magazine/jj991977.aspx?f=255&MSPPError=-2147217396
+
+#### Async/Await - Best Practices in Asynchronous Programming by Stephen Cleary ####
+https://msdn.microsoft.com/en-us/magazine/jj991977.aspx?f=255&MSPPError=-2147217396
+
+#### Graph ####
 * http://www.vcskicks.com/representing-graphs.php
 * http://venus.cs.qc.cuny.edu/~mfried/cs313/graphs.html
 * https://msdn.microsoft.com/en-us/library/ms379574(v=vs.80).aspx
