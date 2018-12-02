@@ -82,6 +82,19 @@ namespace LoopUnrolling
                 Console.WriteLine($"loop unrolling:{watch.ElapsedMilliseconds}ms, result:{(sum1 + sum2 + sum3 + sum4)}");
             }
 
+            //example 5
+            {
+                watch.Restart();
+                var sum = 0;
+
+                foreach (var item in array)
+                {
+                    sum += item;
+                }
+
+                Console.WriteLine($"foreach loop:{watch.ElapsedMilliseconds}ms, result:{sum}");
+            }
+
             Console.ReadKey();
         }
     }
