@@ -10,6 +10,11 @@ https://msdn.microsoft.com/en-us/magazine/jj991977.aspx?f=255&MSPPError=-2147217
 #### Async/Await - Best Practices in Asynchronous Programming by Stephen Cleary ####
 https://msdn.microsoft.com/en-us/magazine/jj991977.aspx?f=255&MSPPError=-2147217396
 
+#### C# Performance ####
+* https://www.dotnetperls.com/
+* http://www.tomdupont.net/2017/03/c-string-interpolation-performance.html
+* http://geekswithblogs.net/BlackRabbitCoder/archive/2010/05/10/c-string-compares-and-concatenations.aspx
+
 #### Graph ####
 * http://www.vcskicks.com/representing-graphs.php
 * http://venus.cs.qc.cuny.edu/~mfried/cs313/graphs.html
