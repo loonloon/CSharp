@@ -59,3 +59,20 @@
  Kernel    | Medium size, containing kernel data structures, drivers and current process & thread information.
  Complete  | Large size, containing complete contents of memory. It's takes time.
  Automatic | New to Windows Server 2012 and 8, same as kernel memory dump but uses a smaller page file when system managed page files are used. Useful for PCs with SSD and lots of RAM.
+ 
+ #### Swap / Page File ####
+* Swap file (or swap space or, in Windows NT, a pagefile) is a space on a hard disk used as the virtual memory extension of a computer's real memory (RAM). 
+* Having a swap file allows your computer's operating system to pretend that you have more RAM than you actually do. 
+* The least recently used files in RAM can be "swapped out" to your hard disk until they are needed later so that new files can be "swapped in" to RAM. In larger operating systems (such as IBM's OS/390), the units that are moved are called pages and the swapping is called paging.
+* One advantage of a swap file is that it can be organized as a single contiguous space so that fewer I/O operations are required to read or write a complete file.
+ 
+ #### Dedicated Dump File ####
+* Basically is a page file that is reserved for use only by the system crash dump routines.  It is not used for paging virtual memory. 
+* Like a page file, the system process keeps an open handle to the dedicated dump file, which prevents it from being deleted. 
+* When you manually initiate a memory dump, or the system crashes on its own, the data is written into the dedicated dump file instead of the page file on the system drive.
+* The dedicated dump file can be stored on any local disk.
+* This feature is enabled by setting the following registry value:
+  * Location: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\CrashControl
+  * Name: DedicatedDumpFile
+  * Type: REG_SZ
+  * Value: A dedicated dump file together with a full path, such as D:\dedicateddumpfile.sys
