@@ -1,4 +1,3 @@
-
 #### Windows Kernel Debugging Fundamentals by Bruce Mackenzie-Low ####
 
 #### Debugging Crashes vs. Hangs  ####
