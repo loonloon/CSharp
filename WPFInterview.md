@@ -187,3 +187,21 @@ http://www.wpftutorial.net/dependencyproperties.html
 
 #### What is DataContext? ####
 Every FrameworkElement can be associated with a DataContext which will be used as the default data source during binding, if no other data source is specified in the binding code. Also, the children of this FrameworkElement auotmatically inherit this setting.
+
+#### What is Prism? ####
+* Used to develop the composite WPF desktop application.
+* Helps to design the loosely coupled components which can be easily integrated with the other components of the overall application.
+* Has RegionManager, EventAggregator and Commands all with the purpose of solving decoupling issues related to UI components.
+* Modular development, as we are developing components as independent units we can assign these units to different developers and do modular parallel development. With parallel development project will be delivered faster.
+* High re-usability, as the components are developed in individual units we can plug them using PRISM and create composed UI in an easy way.
+
+#### What are objectives of Prism? ####
+* Incrementally integrate new capabilities.
+* Create an application from modules that can be built, assembled, and deployed by independent teams using WPF.
+* Minimize cross-team dependencies and allow teams to specialize in different areas, such as user interface (UI) design, business logic implementation, and infrastructure code development.
+* Use an architecture that promotes reusability across independent teams
+* Increase the quality of applications by abstracting common services that are available to all the teams.
+
+#### What is Bootstrapper? ####
+Mainly responsible for the initialization of the application.
+
