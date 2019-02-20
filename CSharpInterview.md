@@ -843,6 +843,22 @@ When the garbage collector detects that the survival rate is high in a generatio
 * The GC.Collect() on one application will cause a performance hit on all application in the same IIS pool.
 * Expensive operation, it searches and determines whether the memory reference is pointing by any objects.
 
+#### Weak vs Strong Reference ####
+
+#### Short vs Long Weak Reference ####
+<table>
+    <tbody>
+        <tr>
+            <th>Short Weak Reference</th>
+            <th>Long Weak Reference</th>
+        </tr>
+        <tr>
+            <td>The target of a short weak reference becomes null when the object is reclaimed by garbage collection.</td>
+            <td>A long weak reference is retained after the object's Finalize method has been called. This allows the object to be recreated, but the state of the object remains unpredictable.</td> 
+        </tr>
+    </tbody>
+</table>
+
 ### Common Language Runtime (CLR), its limitations, weaknesses, and workarounds ####
 
 ### Concurrency Patterns ####
