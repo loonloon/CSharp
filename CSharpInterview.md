@@ -843,7 +843,10 @@ When the garbage collector detects that the survival rate is high in a generatio
 * The GC.Collect() on one application will cause a performance hit on all application in the same IIS pool.
 * Expensive operation, it searches and determines whether the memory reference is pointing by any objects.
 
-#### Weak vs Strong Reference ####
+#### Weak Reference ####
+Represents a weak reference, which references an object while still allowing that object to be reclaimed by garbage collection. Example usages:
+* Caching (Large object)
+* Event handler
 
 #### Short vs Long Weak Reference ####
 <table>
