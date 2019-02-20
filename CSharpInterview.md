@@ -751,10 +751,6 @@ Both of them are compiled to System.String in IL (Intermediate Language), so the
             <th>Data Serializer</th>
         </tr>
         <tr>
-            <td>opt-out style</td>
-            <td>opt-in style</td>     
-        </tr>
-        <tr>
             <td>Everything public getter will be serialized, unless you tell not to it [XmlIgnore].</td>
             <td>Stuff mark as [DataMember] will be serialized.</td>     
         </tr>
