@@ -905,7 +905,7 @@ Represents a weak reference, which references an object while still allowing tha
         </tr>
         <tr>
             <td>Unlock only one single thread from several waiting blocked threads when Set() is called.</td>
-            <td>Unblocks all waiting blocked threads simultaneously.</td> 
+            <td>Unblocks all waiting blocked threads simultaneously when Set() is called.</td> 
         </tr>
     </tbody>
 </table>
