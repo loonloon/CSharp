@@ -862,6 +862,27 @@ Represents a weak reference, which references an object while still allowing tha
     </tbody>
 </table>
 
+#### What is Memory-Mapped Files? ####
+* Efficient random access (direct access) to file data.
+* Share memory between different processes on the same computer.
+
+#### Memory-Mapped Files and Random File I/O ####
+* FileStreams are ~10 times faster than memory-mapped files for sequential I/O.
+* Memory-mapped files are ~10 times faster than FileStreams for random I/O.
+
+<table>
+    <tbody>
+        <tr>
+            <th>Short Weak Reference</th>
+            <th>Long Weak Reference</th>
+        </tr>
+        <tr>
+            <td>The target of a short weak reference becomes null when the object is reclaimed by garbage collection.</td>
+            <td>A long weak reference is retained after the object's Finalize method has been called. This allows the object to be recreated, but the state of the object remains unpredictable.</td> 
+        </tr>
+    </tbody>
+</table>
+
 #### What is the difference between Thread and Task? ####
 <table>
     <tbody>
