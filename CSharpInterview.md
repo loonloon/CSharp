@@ -931,4 +931,13 @@ Represents a weak reference, which references an object while still allowing tha
     </tbody>
 </table>
 
+#### What is Semaphore? ####
+Limits the number of threads that can access a resource or pool of resources concurrently.
+
+#### What is Mutex? ####
+Limits the number of threads that can access a resource or pool of resources concurrently.
+
+#### What is Lock? ####
+Lock is another synchronization mechanism. It restricts the critical region so that only one thread can enter a critical region at a time.
+
 http://dotnetpattern.com/multi-threading-interview-questions
