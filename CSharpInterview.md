@@ -743,7 +743,7 @@ Both of them are compiled to System.String in IL (Intermediate Language), so the
     </tbody>
 </table>
 
-#### What is the difference between Xml Serializer and Data Serializer?
+#### What is the difference between Xml Serializer and Data Serializer? ####
 <table>
     <tbody>
         <tr>
@@ -862,6 +862,38 @@ Represents a weak reference, which references an object while still allowing tha
     </tbody>
 </table>
 
-### Common Language Runtime (CLR), its limitations, weaknesses, and workarounds ####
+#### What is the difference between Thread and Task? ####
+<table>
+    <tbody>
+        <tr>
+            <th>Thread</th>
+            <th>Task</th>
+        </tr>
+        <tr>
+            <td>There is no proper way to return a result from Thread.</td>
+            <td>A Task can return a result.</td> 
+        </tr>
+        <tr>
+            <td>Not available.</td>
+            <td>Can apply chaining on multiple tasks by using ContinueWith.</td> 
+        </tr>
+          <tr>
+            <td>have to use event signals like AutoResetEvent and ManualResetEvent.</td>
+            <td>Can wait on Tasks without using Signalling. But in Threads we </td> 
+        </tr>
+        <tr>
+            <td>Not available.</td>
+            <td>Can apply Parent/Child relationship in Tasks. A Task at one time becomes parent of multiple tasks. Parent Task does not complete until it's child tasks are completed.</td> 
+        </tr>
+        <tr>
+            <td>Not available.</td>
+            <td>Child Tasks can propagate their exceptions to to parent Task and All child exceptions are available in AggregateException class.</td> 
+        </tr>
+        <tr>
+            <td>Not available.</td>
+            <td>Has in-build cancellation mechanism using CancellationToken.</td> 
+        </tr>
+    </tbody>
+</table>
 
-### Concurrency Patterns ####
+#### What is the difference between AutoResetEvent and ManualResetEvent? ####
