@@ -897,4 +897,17 @@ Represents a weak reference, which references an object while still allowing tha
 </table>
 
 #### What is the difference between AutoResetEvent and ManualResetEvent? ####
+<table>
+    <tbody>
+        <tr>
+            <th>AutoResetEvent</th>
+            <th>ManualResetEvent</th>
+        </tr>
+        <tr>
+            <td>Unlock only one single thread from several waiting blocked threads when Set() is called.</td>
+            <td>Unblocks all waiting blocked threads simultaneously.</td> 
+        </tr>
+    </tbody>
+</table>
+
 http://dotnetpattern.com/multi-threading-interview-questions
