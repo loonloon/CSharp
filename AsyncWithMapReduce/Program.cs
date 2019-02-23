@@ -11,9 +11,8 @@ namespace AsyncWithMapReduce
         static void Main(string[] args)
         {
             var sw = System.Diagnostics.Stopwatch.StartNew();
-            string infile;
 
-            ProcessCmdLineArgs(args, out infile);
+            ProcessCmdLineArgs(args, out var infile);
             sw.Restart();
 
             var reviewsByUser = new Dictionary<int, int>();
@@ -54,17 +53,17 @@ namespace AsyncWithMapReduce
                         // merge into global data structure:
                         foreach (var userid in localD.Keys)
                         {
-                            var numreviews = localD[userid];
+                            var numReviews = localD[userid];
 
                             // first review:
                             if (!reviewsByUser.ContainsKey(userid))
                             {
-                                reviewsByUser.Add(userid, numreviews);
+                                reviewsByUser.Add(userid, numReviews);
                             }
                             else
                             {
                                 // another review by same user:
-                                reviewsByUser[userid] += numreviews;
+                                reviewsByUser[userid] += numReviews;
                             }
                         }
                     }
@@ -77,7 +76,7 @@ namespace AsyncWithMapReduce
                        select new { Userid = user.Key, NumReviews = user.Value };
 
             var top10 = sort.Take(10).ToList();
-            var timems = sw.ElapsedMilliseconds;
+            var timeInMs = sw.ElapsedMilliseconds;
 
             Console.WriteLine();
             Console.WriteLine("** Top 10 users reviewing movies:");
@@ -88,7 +87,7 @@ namespace AsyncWithMapReduce
             }
 
             // convert milliseconds to secs
-            var time = timems / 1000.0;
+            var time = timeInMs / 1000.0;
 
             Console.WriteLine();
             Console.WriteLine("** Done! Time: {0:0.000} secs", time);
@@ -131,7 +130,7 @@ namespace AsyncWithMapReduce
 #if DEBUG
             version = "debug";
 #else
-			version = "release";
+            version = "release";
 #endif
 
 #if _WIN64
@@ -162,10 +161,10 @@ namespace AsyncWithMapReduce
             }
 
             var fi = new FileInfo(infile);
-            var sizeinMb = fi.Length / 1048576.0;
+            var sizeInMb = fi.Length / 1048576.0;
 
             Console.WriteLine("** Parallel, MapReduce Top-10 Netflix Data Mining App [{0}, {1}] **", platform, version);
-            Console.Write("   Infile:  '{0}' ({1:#,##0.00 MB})", infile, sizeinMb);
+            Console.Write("   Infile:  '{0}' ({1:#,##0.00 MB})", infile, sizeInMb);
             Console.WriteLine();
         }
     }
