@@ -931,6 +931,45 @@ Represents a weak reference, which references an object while still allowing tha
     </tbody>
 </table>
 
+#### What is Interlocked? ####
+* Provides atomic operations for variables that are shared by multiple threads.
+* Atomic operations are a way to achive thread safety either by using some kind of locks like Mutexes or Semaphores which use atomic operations internally or by implementing lock free synchronization using atomics and memory fences.
+* An operation is atomic if it is indivisible - in other words, nothing else can happen in the middle. So, with an atomic write, you can't have another thread reading the value half way through the write, and ending up "seeing" half of the old value and half of the new value. 
+* Similarly, with an atomic read, you can't have another thread changing the value half way through the read, ending up (again) with a value which is neither the old value nor the new value.
+* It depends on the underlying CPU architecture. For some CPUs, it's easy: The x86, for example, has direct support for many interlocked operations by means of the LOCK prefix in machine language.
+
+#### What is Lock? ####
+It restricts the critical region so that only one thread can enter a critical region at a time.
+
+#### Interlocked vs Lock ####
+<table>
+    <tbody>
+        <tr>
+            <th>Interlocked</th>
+            <th>Lock</th>
+        </tr>
+        <tr>
+            <td>Good if you just care about updating the one variable.</td>
+            <td>If you're doing any other work that relies on that variable's value, should use a lock block for the whole thing.
+</td> 
+        </tr>
+    </tbody>
+</table>
+
+#### Lock vs Monitor ####
+<table>
+    <tbody>
+        <tr>
+            <th>Lock</th>
+            <th>Monitor</th>
+        </tr>
+        <tr>
+            <td>Lock is just a shortcut for Monitor statement. Compiler internally convert lock statement to Monitor.Enter and Exit statements.</td>
+            <td>Provides TryEnter (useful when we need to provide timeout value), Pulse, Wait and etc methods.</td> 
+        </tr>
+    </tbody>
+</table>
+
 #### What is Semaphore? ####
 Limits the number of threads that can access a resource or pool of resources concurrently.
 
@@ -966,7 +1005,12 @@ public static void PrintSomething(int number)
 #### What is Mutex? ####
 Limits the number of threads that can access a resource or pool of resources concurrently.
 
-#### What is Lock? ####
-It restricts the critical region so that only one thread can enter a critical region at a time.
+#### What are Concurrent Collection Classes? ####
+1. ConcurrentQueue
+2. ConcurrentStack
+3. ConcurrentDictionary
+4. ConcurrentBag 
 
-http://dotnetpattern.com/multi-threading-interview-questions
+#### How can you make a Singleton class thread safe?####
+1. Double-Check Locking
+2. Static initialization
