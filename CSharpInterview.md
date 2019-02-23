@@ -934,10 +934,39 @@ Represents a weak reference, which references an object while still allowing tha
 #### What is Semaphore? ####
 Limits the number of threads that can access a resource or pool of resources concurrently.
 
+```
+private static readonly Semaphore semaphore = new Semaphore(5, 5);
+
+static void Main(string[] args)
+{
+    Task.Run(async () =>
+    {
+        for (var i = 1; i <= 15; ++i)
+        {
+            PrintSomething(i);
+
+            if (i % 5 == 0)
+            {
+                await Task.Delay(TimeSpan.FromSeconds(2));
+            }
+        }
+    });
+
+    Console.ReadLine();
+}
+
+public static void PrintSomething(int number)
+{
+    semaphore.WaitOne();
+    Console.WriteLine(number);
+    semaphore.Release();
+}
+```
+
 #### What is Mutex? ####
 Limits the number of threads that can access a resource or pool of resources concurrently.
 
 #### What is Lock? ####
-Lock is another synchronization mechanism. It restricts the critical region so that only one thread can enter a critical region at a time.
+It restricts the critical region so that only one thread can enter a critical region at a time.
 
 http://dotnetpattern.com/multi-threading-interview-questions
