@@ -3,21 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheSameElementFromTwoList", "FindTheSameElementFromTwoList\FindTheSameElementFromTwoList.csproj", "{9F4ACDCB-505B-406C-8C5D-601A9E971FAD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlContractSerialization", "XmlContractSerialization\XmlContractSerialization.csproj", "{6253B653-6F87-449A-8CB4-DD8C528AAA71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCustomExpander", "WPFCustomExpander\WPFCustomExpander.csproj", "{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWithMapReduce", "AsyncWithMapReduce\AsyncWithMapReduce.csproj", "{2CC1F27C-7032-4C44-9181-354A0D44ECF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheMaxProfitOfStockPrice", "FindTheMaxProfitOfStockPrice\FindTheMaxProfitOfStockPrice.csproj", "{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFHostMvc", "WPFHostMvc\WPFHostMvc\WPFHostMvc.csproj", "{BB5B1346-5175-44E1-A2AF-06979249C121}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToHtmlByXslt", "XmlToHtmlByXslt\XmlToHtmlByXslt.csproj", "{7BD38900-3FDE-4389-B05B-945209EDC5C3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalKingdom", "AnimalKingdom\AnimalKingdom.csproj", "{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopUnrolling", "LoopUnrolling\LoopUnrolling.csproj", "{93E01DFF-8227-4D58-B600-B32808DA9B66}"
 EndProject
@@ -29,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9F4ACDCB-505B-406C-8C5D-601A9E971FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F4ACDCB-505B-406C-8C5D-601A9E971FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F4ACDCB-505B-406C-8C5D-601A9E971FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F4ACDCB-505B-406C-8C5D-601A9E971FAD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,10 +35,6 @@ Global
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{286E0C1A-BFF8-4BD6-9C0F-CBD86892F60F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB5B1346-5175-44E1-A2AF-06979249C121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB5B1346-5175-44E1-A2AF-06979249C121}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB5B1346-5175-44E1-A2AF-06979249C121}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,10 +43,6 @@ Global
 		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B95F2D1-B89A-41A5-8BF3-25D24A42D041}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
