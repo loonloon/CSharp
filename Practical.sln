@@ -9,13 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCustomExpander", "WPFCus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWithMapReduce", "AsyncWithMapReduce\AsyncWithMapReduce.csproj", "{2CC1F27C-7032-4C44-9181-354A0D44ECF5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFHostMvc", "WPFHostMvc\WPFHostMvc\WPFHostMvc.csproj", "{BB5B1346-5175-44E1-A2AF-06979249C121}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToHtmlByXslt", "XmlToHtmlByXslt\XmlToHtmlByXslt.csproj", "{7BD38900-3FDE-4389-B05B-945209EDC5C3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopUnrolling", "LoopUnrolling\LoopUnrolling.csproj", "{93E01DFF-8227-4D58-B600-B32808DA9B66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyConcurrentDictionary", "LazyConcurrentDictionary\LazyConcurrentDictionary.csproj", "{CC00E725-85A7-4E47-BB25-19FB686644DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFHostMvc", "WPFHostMvc\WPFHostMvc.csproj", "{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CC1F27C-7032-4C44-9181-354A0D44ECF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB5B1346-5175-44E1-A2AF-06979249C121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB5B1346-5175-44E1-A2AF-06979249C121}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB5B1346-5175-44E1-A2AF-06979249C121}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB5B1346-5175-44E1-A2AF-06979249C121}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BD38900-3FDE-4389-B05B-945209EDC5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{CC00E725-85A7-4E47-BB25-19FB686644DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC00E725-85A7-4E47-BB25-19FB686644DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC00E725-85A7-4E47-BB25-19FB686644DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
