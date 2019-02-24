@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace XmlContractSerialization
+namespace DataContractSerialization
 {
     [DataContract]
     public class Parameter

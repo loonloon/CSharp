@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using System.Xml;
 
-namespace XmlContractSerialization
+namespace DataContractSerialization
 {
     class Program
     {
@@ -12,7 +12,6 @@ namespace XmlContractSerialization
         {
             var filePath = string.Empty;
             var executablePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-
 
             if (executablePath != null)
             {

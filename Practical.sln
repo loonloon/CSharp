@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlContractSerialization", "XmlContractSerialization\XmlContractSerialization.csproj", "{6253B653-6F87-449A-8CB4-DD8C528AAA71}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCustomExpander", "WPFCustomExpander\WPFCustomExpander.csproj", "{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWithMapReduce", "AsyncWithMapReduce\AsyncWithMapReduce.csproj", "{2CC1F27C-7032-4C44-9181-354A0D44ECF5}"
@@ -17,16 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyConcurrentDictionary", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFHostMvc", "WPFHostMvc\WPFHostMvc.csproj", "{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContractSerialization", "DataContractSerialization\DataContractSerialization.csproj", "{B57CFCB1-F3AB-4307-85B0-7E160AEC2B2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6253B653-6F87-449A-8CB4-DD8C528AAA71}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BE64F2A-AAF2-4F16-89B7-8AF47EBC7715}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16DEDD81-9B3F-4911-AB42-09DA09A55DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57CFCB1-F3AB-4307-85B0-7E160AEC2B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57CFCB1-F3AB-4307-85B0-7E160AEC2B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57CFCB1-F3AB-4307-85B0-7E160AEC2B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57CFCB1-F3AB-4307-85B0-7E160AEC2B2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
