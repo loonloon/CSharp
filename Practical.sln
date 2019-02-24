@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalKingdom", "AnimalKing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopUnrolling", "LoopUnrolling\LoopUnrolling.csproj", "{93E01DFF-8227-4D58-B600-B32808DA9B66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyConcurrentDictionary", "LazyConcurrentDictionary\LazyConcurrentDictionary.csproj", "{CC00E725-85A7-4E47-BB25-19FB686644DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93E01DFF-8227-4D58-B600-B32808DA9B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC00E725-85A7-4E47-BB25-19FB686644DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC00E725-85A7-4E47-BB25-19FB686644DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC00E725-85A7-4E47-BB25-19FB686644DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC00E725-85A7-4E47-BB25-19FB686644DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
