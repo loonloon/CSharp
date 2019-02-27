@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using Net2Interface;
 using Net4Assembly;
 
 namespace Net4ToNet2Adapter

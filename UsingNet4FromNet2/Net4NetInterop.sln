@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net2Assembly", "Net2Assembl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net4ToNet2Adapter", "Net4ToNet2Adapter\Net4ToNet2Adapter.csproj", "{93CC5758-239D-4F77-B755-0A9543562CA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net2Interface", "Net2Interface\Net2Interface.csproj", "{23552E39-A48A-4179-9146-567D5550FE03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,18 @@ Global
 		{93CC5758-239D-4F77-B755-0A9543562CA6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{93CC5758-239D-4F77-B755-0A9543562CA6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{93CC5758-239D-4F77-B755-0A9543562CA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Debug|x86.Build.0 = Debug|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Release|x86.ActiveCfg = Release|Any CPU
+		{23552E39-A48A-4179-9146-567D5550FE03}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
