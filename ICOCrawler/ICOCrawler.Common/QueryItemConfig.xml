@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QueryItemConfiguration xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ICOCrawler.Common">
+  <QueryItems>
+    <QueryItem>
+      <Keyword>atomic swaps</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>txs cross chain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>multi chain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>mesh networking</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>optimized ecosystem blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>autonomous blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>internet blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>IOT blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>DAG blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>computing blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>network blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>plasma blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>private blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>smart contract blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>high performance blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>quantum computing blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>quantum blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>public blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>enterprise blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>sharding blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>scalable blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>high throughput blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>distributed ledger</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>distributed computing</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain platform</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>decentralized cloud</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>decentralized data storage</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>decentralized storage</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>decentralized internet</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>decentralized network</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>decentralized computing</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>protocol blog</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>smart contract</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>double consensus</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>high speed consensus</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>DAG plartform</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>DAG protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>avalanche protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>scalable protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>consensus protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>plasma protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>sharding protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>network protocol</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>IPFS</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>PBFT consensus</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>off chain scaling</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain infrastructure</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain ecosystem</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain economy</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain foundation</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain network</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>blockchain lab</Keyword>
+    </QueryItem>
+    <!--<QueryItem>
+      <Keyword>foundation</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>chain</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>network</Keyword>
+    </QueryItem>-->
+    <!--<QueryItem>
+      <Keyword>masternodes</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>proof of stake</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>proof of history</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>proof of authority</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>proof of skill</Keyword>
+    </QueryItem>
+    <QueryItem>
+      <Keyword>delegate proof of stake</Keyword>
+    </QueryItem>-->
+  </QueryItems>
+</QueryItemConfiguration>
