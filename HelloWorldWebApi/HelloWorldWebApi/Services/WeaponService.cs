@@ -29,7 +29,7 @@ namespace HelloWorldWebApi.Services
 
             try
             {
-                var character = await _dataContext.Characters.FirstOrDefaultAsync(x => x.Id == newWeapon.CharacterId && x.User.Id == int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier)));
+                var character = await _dataContext.Characters.FirstOrDefaultAsync(x => x.Id == newWeapon.CharacterId && x.User.Id == GetUserId());
 
                 if (character == null)
                 {
@@ -55,6 +55,12 @@ namespace HelloWorldWebApi.Services
             }
 
             return serviceResponse;
+        }
+
+        private int GetUserId()
+        {
+            var userIdString = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return int.TryParse(userIdString, out var userId) ? userId : 0;
         }
     }
 }
