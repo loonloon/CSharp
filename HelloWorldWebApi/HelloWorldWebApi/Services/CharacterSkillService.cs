@@ -33,8 +33,7 @@ namespace HelloWorldWebApi.Services
                     .Include(x => x.Weapon)
                     .Include(x => x.CharacterSkills)
                     .ThenInclude(x => x.Skill)
-                    .FirstOrDefaultAsync(x => x.Id == newCharacterSkill.CharacterId && x.User.Id ==
-                    int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier)));
+                    .FirstOrDefaultAsync(x => x.Id == newCharacterSkill.CharacterId && x.User.Id == GetUserId());
 
                 if (character == null)
                 {
@@ -70,6 +69,12 @@ namespace HelloWorldWebApi.Services
             }
 
             return serviceResponse;
+        }
+
+        private int GetUserId()
+        {
+            var userIdString = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return int.TryParse(userIdString, out var userId) ? userId : 0;
         }
     }
 }

@@ -138,7 +138,11 @@ namespace HelloWorldWebApi.Services
             return serviceResponse;
         }
 
-        private int GetUserId() => int.Parse(_httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier) ?? string.Empty);
+        private int GetUserId()
+        {
+            var userIdString = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return int.TryParse(userIdString, out var userId) ? userId : 0;
+        }
         private string GetUserRole() => _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.Role) ?? string.Empty;
     }
 }
