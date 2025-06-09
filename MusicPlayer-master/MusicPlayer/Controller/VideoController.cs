@@ -130,7 +130,7 @@ namespace MusicPlayer.Controller
         }
 
         /// <summary>
-        /// This thread will Send the Vidoe and tim to the clients every 5 seconds.
+        /// This thread sends the video and time to the clients every 5 seconds.
         /// </summary>
         private void CheckTime()
         {
